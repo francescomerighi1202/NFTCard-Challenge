@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-clr: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --p-fs: 18px;
+    --ff: 'Outfit', sans-serif;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+}
+
+.nft__card {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    max-width: 350px;
+    width: 80%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.033);
+}
+
+.nft__image {
+    border-radius: 10px;
+}
+
+.nft__title {
+    color: var(--white);
+    font-family: var(--ff);
+}
+
+.nft__title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nft__desc {
+    color: var(--soft-blue);
+    font-family: var(--ff);
+    font-weight: var(--fw-300);
+    font-size: var(--p-fs);
+    margin-top: 1em;
+}
+
+.nft__info {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+}
+
+.price p {
+    color: var(--cyan);
+    font-size: var(--p-fs);
+    font-family: var(--ff);
+    margin-left: .5em;
+    font-weight: var(--fw-600);
+}
+
+.time__left {
+    display: flex;
+}
+
+.time__left p {
+    color: var(--soft-blue);
+    font-family: var(--ff);
+    font-size: var(--p-fs);
+    margin-left: .5em;
+}
+
+.creation {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 2px solid var(--line-clr);
+    display: flex;
+    align-items: center;
+}
+
+.creation p {
+    margin-left: 1em;
+    color: var(--soft-blue);
+    font-family: var(--ff);
+}
+
+span {
+    color: var(--white);
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.avatar {
+    width: 10%;
+    border-radius: 100px;
+    border: 1px solid var(--white);
+}
